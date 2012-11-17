@@ -1,4 +1,4 @@
-package com.albertofaci.dwhandlebars.view;
+package com.albertofaci.dropwizard.handlebars;
 
 import org.codehaus.jackson.annotate.JsonIgnore;
 
@@ -6,18 +6,21 @@ import com.yammer.metrics.Metrics;
 import com.yammer.metrics.core.Timer;
 
 /**
- * Copied from the View class, just to differentiate
+ * Clearly based on Alexander Reelsen's JsView
  */
-public class HandlebarsView {
+public abstract class HandlebarsView {
     private final String templateName;
     private final Timer renderingTimer;
 
     public HandlebarsView(String templateName) {
         this.templateName = resolveName(templateName);
-        renderingTimer = Metrics.newTimer(getClass(), "jsrendering");
+        renderingTimer = Metrics.newTimer(getClass(), "handlebars-rendering");
     }
 
     private String resolveName(String templateName) {
+    	if(templateName == null){
+    		throw new IllegalArgumentException("templateName must not be null");
+    	}
         if (templateName.startsWith("/")) {
             return templateName;
         }

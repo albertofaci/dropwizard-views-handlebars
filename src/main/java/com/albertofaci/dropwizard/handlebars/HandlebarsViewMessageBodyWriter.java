@@ -1,4 +1,4 @@
-package com.albertofaci.dwhandlebars.writer;
+package com.albertofaci.dropwizard.handlebars;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,7 +16,6 @@ import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.ext.MessageBodyWriter;
 import javax.ws.rs.ext.Provider;
 
-import com.albertofaci.dwhandlebars.view.HandlebarsView;
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.Helper;
 import com.github.jknack.handlebars.MarkdownHelper;

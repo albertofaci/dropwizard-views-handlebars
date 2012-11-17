@@ -1,4 +1,4 @@
-package com.albertofaci.dwhandlebars.view;
+package com.albertofaci.dropwizard.handlebars;
 
 public class ContextlessView extends HandlebarsView {
 
