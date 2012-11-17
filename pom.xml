@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.albertofaci</groupId>
 	<artifactId>dropwizard-views-handlebars</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>Dropwizard Handlebars integration</name>
 
 	<properties>
@@ -25,11 +25,6 @@
 			<artifactId>handlebars</artifactId>
 			<version>${jknack.version}</version>
 		</dependency>
-		 <dependency>
-		   <groupId>com.github.jknack</groupId>
-		   <artifactId>handlebars-markdown</artifactId>
-		   <version>${jknack.version}</version>
-		 </dependency>
 		 <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
