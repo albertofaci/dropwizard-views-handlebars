@@ -18,7 +18,6 @@ import javax.ws.rs.ext.Provider;
 
 import com.github.jknack.handlebars.Handlebars;
 import com.github.jknack.handlebars.Helper;
-import com.github.jknack.handlebars.MarkdownHelper;
 import com.github.jknack.handlebars.Template;
 import com.google.common.io.CharStreams;
 import com.yammer.metrics.core.TimerContext;

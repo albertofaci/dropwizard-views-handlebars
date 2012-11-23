@@ -3,11 +3,8 @@ package com.albertofaci.dropwizard.handlebars;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.lang.annotation.Annotation;
-import java.lang.reflect.Type;
 
-import javax.ws.rs.GET;
 import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.core.MediaType;
 
 import org.junit.Assert;
 import org.junit.Before;
